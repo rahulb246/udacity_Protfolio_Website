@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+	<title>Udacity Portfolio Site by Rahul B</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<header>
+				<div class="col-md-6 col-sm-4 col-xs-4">
+					<img class="img-responsive logo" src="images/logo.jpg" alt="Portfolio Site Logo">
+				</div>
+
+				<div class="col-md-6 col-sm-8 col-sm-8 text-right text-uppercase">
+					<h1>Rahul Bojanapally</h1>
+					<h4>Front-End Ninja</h4>
+				</div>
+			</header>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+			<hr>
+				<img class="img-responsive" src="images/desk.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Featured Projects</h2>
+			</div>
+		</div>
+		<div class="row text-center container">
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/download.jpg" alt="movie trailer screenshot" data-toggle="modal" data-target=".trailer-modal">
+				<h3>Udacity Movie Trailer Website</h3>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/blog.jpg" alt="blog Screenshot" data-toggle="modal" data-target=".blog-modal">
+				<h3>Mini Blog</h3>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/jasmine.jpg" alt="jasmine Screenshot" data-toggle="modal" data-target=".jasmine-modal">
+				<h3>Demo App to test Angular using Jasmine</h3>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/mean.jpg" alt="mean Screenshot" data-toggle="modal" data-target=".mean-modal">
+				<h3>MEAN stack app</h3>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<hr>
+			<p class="text-muted text-center">You can have a look at my blog at <a href="https://rahulbojanapally.wordpress.com/">rahulbojanapally.wordpress.com</a></a></p>
+		</div>
+	</footer>
+
+<!-- Movie Trailer Modal -->
+<div class="modal fade trailer-modal" tabindex="-1" role="dialog" aria-labelledby="trailerModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Udacity Movie Trailer Website</h4>
+      </div>
+      <div class="modal-body">
+				<img class="portfolio-img img-responsive" src="images/download.jpg" alt="movie trailer screenshot">
+				<hr>
+    		<p>This project is the first project of the Udacity Full Stack Nonodegree Program.</p>
+				<p><a href="https://github.com/rahulb246/Udacity_movie_trailer_website.git">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mini Blog Modal -->
+<div class="modal fade blog-modal" tabindex="-1" role="dialog" aria-labelledby="blogModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Mini Blog</h4>
+      </div>
+      <div class="modal-body">
+				<img class="portfolio-img img-responsive" src="images/blog.jpg" alt="Blog Screenshot">
+				<hr>
+        <p>This is a mini blog with authentication support built using Django.</p>
+				<p><a href="https://github.com/rahulb246/blogger.git">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Demo App to test Angular using Jasmine Modal -->
+<div class="modal fade jasmine-modal" tabindex="-1" role="dialog" aria-labelledby="jasmineModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Demo App to test Angular using Jasmine</h4>
+      </div>
+      <div class="modal-body">
+				<img class="portfolio-img img-responsive" src="images/jasmine.jpg" alt="Jasmine Screenshot">
+				<hr>
+        <p>This is a Demo App to test AngularJS using Karma and Jasmine.</p>
+				<p><a href="https://github.com/rahulb246/Testing-frontend-of-a-FULL-Stack-app-using-Jasmine.git">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mean Modal -->
+<div class="modal fade mean-modal" tabindex="-1" role="dialog" aria-labelledby="meanModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">MEAN stack app</h4>
+      </div>
+      <div class="modal-body">
+				<img class="portfolio-img img-responsive" src="images/mean.jpg" alt="mean Screenshot">
+        <hr>
+				<p>This a sample full stack application using MEAN stack.</p>
+				<p><a href="https://github.com/rahulb246/fim_MEAN.git">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
